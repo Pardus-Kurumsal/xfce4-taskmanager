@@ -1,0 +1,175 @@
+xfce4-taskmanager (1.1.0-1) unstable; urgency=medium
+
+  [ Mateusz Łukasik ]
+  * New upstream release. (Closes: #735235)
+    - Refresh 01_configure-kfreebsd.patch.
+  * debian/control: Bump standards-version to 3.9.6.
+  * debian/xfce4-taskmanager.1: fix misplaced full stop dots in description
+    in man page. (Closes: #756203)
+  * debian/rules:
+    - Use disable-wnck3.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 06 May 2015 23:06:57 +0200
+
+xfce4-taskmanager (1.0.1-1) unstable; urgency=medium
+
+  [ Jackson Doak ]
+  * New upstream release
+  * debian/control: Bump standards-version to 3.9.5
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 09 Jan 2014 09:12:50 +0100
+
+xfce4-taskmanager (1.0.0-4) unstable; urgency=low
+
+  [ Jackson Doak ]
+  * debian/patches:
+    - update 01_configure-kfreebsd to fix FTBFS on kFreeBSD.    closes: #722924
+  * debian/control:
+    - build-depend on libkvm-dev [kfreebsd-any]
+    - Make homepage more specific
+    - Extend description
+  * debian/rules:
+    - Use disable-silent-rules
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 09 Oct 2013 22:47:11 +0200
+
+xfce4-taskmanager (1.0.0-3) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Correct Vcs-* URLs to point to anonscm.debian.org
+
+  [ Jackson Doak ]
+  * Create debian/source/format as 3.0 (quilt)
+  * debian/copyright: Change to debian machine readable format
+  * debian/control:
+    - Bump standards version to 3.9.4
+    - Remove build-bepends on cdbs
+    - Buld-depend on debhelper 9
+  * debian/rules: transition to simple debhelper
+  * Create debian/source/options
+  * Create debian/xfce4-taskmanager.1
+  * Create debian/patches/series
+  * Refresh patch so it applies
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - add build-dep on xfce4-dev-tools.
+    - remove Emanuele and Simon from uploaders, thanks to them!
+  * debian/docs added, to ship various documents files previously
+    automatically shipped by cdbs.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 18 Aug 2013 13:20:13 +0200
+
+xfce4-taskmanager (1.0.0-2) unstable; urgency=low
+
+  * debian/control:
+    - switch section to xfce.
+  * debian/patches:
+    - 01_configure-kfreebsd: accept kFreeBSD as we accept Linux, since it uses
+      /proc and kFreeBSD emulation is good enough.              closes: #586465
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 21 Oct 2010 11:50:26 +0200
+
+xfce4-taskmanager (1.0.0-1) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Fix Vcs-* fields, they were missing 'trunk' in the path.
+
+  [ Yves-Alexis Perez ]
+  * debian/watch edited to track Xfce archive reorganisation.
+  * New upstream beta release.
+    - display SI unit correctly.                                closes: #434273
+  * debian/control:
+    - update standards version to 3.8.4.
+    - drop libxfce4util and libxfcegui4 from build-deps.
+
+  [ Lionel Le Folgoc ]
+  * New upstream beta release (0.5.91):
+    - reintroduce *bsd support.
+  * New upstream beta release (0.5.92):
+    - ui improvements.
+  * New upstream stable release (1.0.0):
+    - graphes of cpu and memory usage
+  * Add myself to Uploaders.
+  * debian/control: add new build-deps, libwnck-dev and libcairo2-dev.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Jun 2010 12:21:53 +0200
+
+xfce4-taskmanager (0.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - fix cpu utilisation display on amd64.                     closes: #486474 
+  * debian/control:
+    - update standards version to 3.8.0.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 22 Feb 2009 17:37:05 +0100
+
+xfce4-taskmanager (0.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - fix segfault when trying to sort by user.                 closes: #478879
+    - fix memory leak.                                          closes: #400926
+    - provide a .desktop file.                                  closes: #484143
+  * debian/patches:
+    - 01_fix-implicit-pointer-conversion dropped, merged upstream.
+    - 02_fix-units dropped, merged upstream.
+  * debian/xfce4-taskmanager.1: update version.
+  * debian/compat: update to 7. 
+  * debian/control: 
+    - update build-dep on debhelper accordingly.
+    - remove  Rudy Godoy and Martin Loschwitz from Uploaders.
+  * debian/copyright:
+    - update copyright dates.
+    - update notice about GPL version.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 02 Jun 2008 20:26:16 +0200
+
+xfce4-taskmanager (0.4.0~rc2-3) unstable; urgency=low
+
+  [ Stefan Ott ]
+  * debian/control: updated the url
+
+  [ Simon Huggins ]
+  * debian/control: Move fake Homepage field to a real one now dpkg
+    supports it.
+
+  [ Yves-Alexis Perez ]
+  * debian/watch: updated the url.                              closes: #449713
+  * debian/patches: 02_fix-units added.                         closes: #434272
+  * debian/control:
+    - update my email address.
+    - update standards version.
+    - update build-deps against 4.4.2.
+  * debian/copyright: update date.
+
+  [ Simon Huggins ]
+  * Add Vcs-* headers to debian/control
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Apr 2008 13:37:08 +0200
+
+xfce4-taskmanager (0.4.0~rc2-2) unstable; urgency=low
+
+  * Incorporate patch from Dann Frazier to fix implicit pointer conversion and
+    avoid a possible segfault on ia64 and amd64. Thanks !	closes: #389517
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Thu, 26 Oct 2006 21:44:34 +0200
+
+xfce4-taskmanager (0.4.0~rc2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Sat, 23 Sep 2006 15:41:20 +0100
+
+xfce4-taskmanager (0.3.1-2) unstable; urgency=low
+
+  * Updated build-deps to 4.3.90.2 (Xfce 4.4 Beta2).
+  * Updated standards version to 3.7.2.
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Wed, 26 Jul 2006 15:06:40 +0100
+
+xfce4-taskmanager (0.3.1-1) unstable; urgency=low
+
+  * (Markus Bergholz <markuman@gmail.com>)
+    + Initial release.                                         closes: #365674
+  
+ -- Yves-Alexis Perez <corsac@corsac.net>  Sat, 03 Jun 2006 15:59:00 +0200

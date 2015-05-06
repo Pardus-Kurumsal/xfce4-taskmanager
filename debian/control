@@ -1,0 +1,26 @@
+Source: xfce4-taskmanager
+Section: xfce
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>,
+ Lionel Le Folgoc <mrpouit@gmail.com>
+Build-Depends: debhelper (>= 9), libgtk2.0-dev (>= 2.12.0),
+ libcairo2-dev (>= 1.5.0), libwnck-dev (>= 2.0), intltool, dh-autoreconf,
+ xfce4-dev-tools, libkvm-dev [kfreebsd-any]
+Standards-Version: 3.9.6
+Homepage: http://goodies.xfce.org/projects/applications/xfce4-taskmanager
+Vcs-Svn: svn://anonscm.debian.org/pkg-xfce/goodies/trunk/xfce4-taskmanager/
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-xfce/goodies/trunk/xfce4-taskmanager/
+
+Package: xfce4-taskmanager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: process manager for the Xfce4 Desktop Environment
+ A GUI application for monitoring and controlling running processes 
+ written for Xfce. It's features include:
+ .
+  *Support for Linux, OpenBSD, FreeBSD and OpenSolaris.
+  *Monitors the CPU and memory usage.
+  *Tree view columns can be reordered.
+  *Display window icons/names.
+  *Customizable with some settings.
