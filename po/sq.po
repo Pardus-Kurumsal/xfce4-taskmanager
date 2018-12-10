@@ -1,0 +1,320 @@
+# Albanian translation of the xfce4-taskmanager package.
+# Copyright (C) 2005 Johannes Zellner.
+# This file is distributed under the same license as the xfce4-taskmanager package.
+# Besnik Bleta <besnik@programeshqip.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-taskmanager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-24 04:08+0000\n"
+"PO-Revision-Date: 2010-05-24 08:53+0200\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
+"Language-Team: Albanian <translation-team-sq@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../xfce4-taskmanager.desktop.in.h:1
+#: ../src/process-window.c:372
+msgid "Easy to use task manager"
+msgstr "Përgjegjës procesesh i lehtë për t'u përdorur"
+
+#: ../xfce4-taskmanager.desktop.in.h:2
+#: ../src/process-tree-view.c:215
+#: ../src/process-tree-view.c:229
+#: ../src/process-tree-view.c:247
+#: ../src/process-window.c:177
+#: ../src/process-window.c:367
+msgid "Task Manager"
+msgstr "Përgjegjës Procesesh"
+
+#: ../src/process-statusbar.c:139
+#, c-format
+msgid "CPU: %s%%"
+msgstr "CPU: %s%%"
+
+#: ../src/process-statusbar.c:148
+#, c-format
+msgid "Memory: %s%%"
+msgstr "Kujtesë: %s%%"
+
+#: ../src/process-statusbar.c:157
+#, c-format
+msgid "Swap: %s%%"
+msgstr "Swap: %s%%"
+
+#: ../src/process-statusbar.c:172
+#, c-format
+msgid "Processes: %d"
+msgstr "Procese: %d"
+
+#: ../src/process-tree-view.c:106
+msgid "Task"
+msgstr "Proces"
+
+#: ../src/process-tree-view.c:116
+#: ../src/process-window.c:307
+msgid "PID"
+msgstr "PID"
+
+#: ../src/process-tree-view.c:124
+#: ../src/process-window.c:308
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/process-tree-view.c:132
+#: ../src/process-window.c:309
+msgid "State"
+msgstr "Gjendje"
+
+#: ../src/process-tree-view.c:141
+msgid "VSZ"
+msgstr ""
+
+#: ../src/process-tree-view.c:149
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/process-tree-view.c:157
+#: ../src/process-window.c:312
+msgid "UID"
+msgstr "UID"
+
+#: ../src/process-tree-view.c:165
+#: ../src/process-window.c:313
+msgid "CPU"
+msgstr "CPU%"
+
+#. TRANSLATORS: “Prio.” is short for Priority, it appears in the tree view header.
+#: ../src/process-tree-view.c:174
+msgid "Prio."
+msgstr "Përp."
+
+#: ../src/process-tree-view.c:212
+msgid "Terminate task"
+msgstr "Përfundoje procesin"
+
+#: ../src/process-tree-view.c:212
+msgid "Kill task"
+msgstr "Asgjësoje procesin"
+
+#: ../src/process-tree-view.c:214
+#, c-format
+msgid "Are you sure you want to send a signal to the PID %d?"
+msgstr "Jeni i sigurt se doni të dërgoni sinjal te PID %d?"
+
+#: ../src/process-tree-view.c:225
+msgid "Error sending signal"
+msgstr "Gabim në dërgim sinjali"
+
+#: ../src/process-tree-view.c:227
+#, c-format
+msgid "An error was encountered by sending a signal to the PID %d. It is likely you don't have the required privileges."
+msgstr "Ndodhi një gabim gjatë dërgimit të sinjalit te PID %d. Ka të ngjarë që nuk keni privilegjet e domosdoshme."
+
+#: ../src/process-tree-view.c:244
+msgid "Error setting priority"
+msgstr "Gabim në caktim përparësie"
+
+#: ../src/process-tree-view.c:245
+#, c-format
+msgid "An error was encountered by setting a priority to the PID %d. It is likely you don't have the required privileges."
+msgstr "Ndodhi një gabim gjatë dërgimit të përparësisë për PID %d. Ka të ngjarë që nuk keni privilegjet e domosdoshme."
+
+#: ../src/process-tree-view.c:262
+msgid "Stop"
+msgstr "Ndal"
+
+#: ../src/process-tree-view.c:269
+msgid "Continue"
+msgstr "Vazhdo"
+
+#: ../src/process-tree-view.c:275
+msgid "Kill"
+msgstr "Asgjëso"
+
+#: ../src/process-tree-view.c:280
+msgid "Terminate"
+msgstr "Përfundoje"
+
+#: ../src/process-tree-view.c:287
+msgid "Very low"
+msgstr "Shumë e ulët"
+
+#: ../src/process-tree-view.c:292
+msgid "Low"
+msgstr "E ulët"
+
+#: ../src/process-tree-view.c:297
+msgid "Normal"
+msgstr "Normale"
+
+#: ../src/process-tree-view.c:302
+msgid "High"
+msgstr "E lartë"
+
+#: ../src/process-tree-view.c:307
+msgid "Very high"
+msgstr "Shumë e lartë"
+
+#: ../src/process-tree-view.c:312
+#: ../src/process-window.c:314
+msgid "Priority"
+msgstr "Përparësi"
+
+#: ../src/process-window.c:175
+msgid "Execution error"
+msgstr "Gabim përmbushjeje"
+
+#: ../src/process-window.c:203
+msgid "Run Program..."
+msgstr "Xhironi një Program..."
+
+#: ../src/process-window.c:204
+msgid "Application Finder"
+msgstr "Gjetës Zbatimesh"
+
+#: ../src/process-window.c:205
+msgid "Terminal emulator"
+msgstr "Emulues terminali"
+
+#: ../src/process-window.c:206
+msgid "XTerm"
+msgstr "XTerm"
+
+#. TRANSLATORS: The next values are in seconds or milliseconds
+#: ../src/process-window.c:247
+msgid "250ms"
+msgstr "250ms"
+
+#: ../src/process-window.c:248
+msgid "500ms"
+msgstr "500ms"
+
+#: ../src/process-window.c:249
+msgid "750ms"
+msgstr "750ms"
+
+#: ../src/process-window.c:250
+msgid "1s"
+msgstr "1s"
+
+#: ../src/process-window.c:251
+msgid "2s"
+msgstr "2s"
+
+#: ../src/process-window.c:252
+msgid "5s"
+msgstr "5s"
+
+#: ../src/process-window.c:253
+msgid "10s"
+msgstr "10s"
+
+#: ../src/process-window.c:294
+msgid "Show all processes"
+msgstr "Shfaqi krejt proceset"
+
+#: ../src/process-window.c:295
+msgid "More precision"
+msgstr "Më tepër përpikmëri"
+
+#: ../src/process-window.c:296
+msgid "Full command line"
+msgstr "Plotësisht rresht urdhrash"
+
+#: ../src/process-window.c:297
+msgid "Show status icon"
+msgstr "Shfaq ikonë gjendjeje"
+
+#: ../src/process-window.c:300
+msgid "Refresh rate"
+msgstr "Shpeshti rifreskimi"
+
+#: ../src/process-window.c:310
+msgid "Virtual Bytes"
+msgstr "Bajte Virtualë"
+
+#: ../src/process-window.c:311
+msgid "Private Bytes"
+msgstr "Bajte Vetjakë"
+
+#: ../src/process-window.c:375
+msgid "translator-credits"
+msgstr "Besnik Bleta"
+
+#: ../src/task-manager.c:165
+#, c-format
+msgid "%lu MiB"
+msgstr "%lu MiB"
+
+#: ../src/task-manager.c:172
+#, c-format
+msgid "%lu KiB"
+msgstr "%lu KiB"
+
+#: ../src/task-manager.c:176
+#, c-format
+msgid "%lu B"
+msgstr "%lu B"
+
+#: ../src/task-manager.c:189
+#, c-format
+msgid "%s%%"
+msgstr "%s%%"
+
+#: ../src/main.c:61
+#, c-format
+msgid ""
+"<b>Processes:</b> %u\n"
+"<b>CPU:</b> %.0f%%\n"
+"<b>Memory:</b> %.0f%%\n"
+"<b>Swap:</b> %.0f%%"
+msgstr ""
+"<b>Procese:</b> %u\n"
+"<b>CPU:</b> %.0f%%\n"
+"<b>Kujtesë:</b> %.0f%%\n"
+"<b>Swap:</b> %.0f%%"
+
+#: ../src/main.c:69
+#, c-format
+msgid ""
+"Processes: %u\n"
+"CPU: %.0f%%\n"
+"Memory: %.0f%%\n"
+"Swap: %.0f%%"
+msgstr ""
+"Procese: %u\n"
+"CPU: %.0f%%\n"
+"Kujtesë: %.0f%%\n"
+"Swap: %.0f%%"
+
+#~ msgid "Control your processes"
+#~ msgstr "Kontrolloni proceset tuaja"
+#~ msgid "Process manager"
+#~ msgstr "Përgjegjës procesesh"
+#~ msgid "Xfce4 Taskmanager"
+#~ msgstr "Përgjegjësi i proceseve për Xfce4"
+#~ msgid "Really kill the task?"
+#~ msgstr "Ta asgjësojë vërtet këtë akt?"
+#~ msgid "%d MB of %d MB used"
+#~ msgstr "%d MB të përdorura nga %d MB gjithsej"
+#~ msgid "Cpu usage"
+#~ msgstr "Përdorim cpu-je"
+#~ msgid "Command"
+#~ msgstr "Urdhër"
+#~ msgid "VM-Size"
+#~ msgstr "Madhësi VM"
+#~ msgid "User"
+#~ msgstr "Përdorues"
+#~ msgid "Show user tasks"
+#~ msgstr "Shfaq veprime përdoruesi"
+#~ msgid "Show root tasks"
+#~ msgstr "Shfaq veprime rrënje"
+#~ msgid "Show other tasks"
+#~ msgstr "Shfaq veprime të tjera"
+#~ msgid "Show memory used by cache as free"
+#~ msgstr "Kujtesën e përdorur nga fshehtina shfaqe si të lirë"
+#~ msgid "Contributors:"
+#~ msgstr "Pjesëmarrësa:"
+

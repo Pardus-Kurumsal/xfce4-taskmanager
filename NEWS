@@ -1,0 +1,79 @@
+1.1.0
+
+- Initial port to Gtk3, use --enable-gtk3 to test it (Gtk2 is still the default)
+- Stop using lots of deprecated Gtk2 API
+- Add a process treeview mode (Peter de Ridder)
+- General UI/graph overhaul (Simon Steinbeiss)
+- Various crash & correctness fixes on the bsd backend
+- Add a searchbox to filter on process names (Matias de Iellis #9856)
+- Make Escape key close the main window (Harald Judt #11343)
+- Fix window settings not properly saved (#10670)
+- Fix build issue on FreeBSD 8.0 (#8081)
+- Fix the refresh rate menu (Alistair Buxton)
+- Default the focus on the process list instead of the exec button (#10643)
+- Add an option to show memory/swap usage as bytes instead of % (#6503)
+- Add unique app behaviour (#8808)
+- Default to close the window instead of hiding in systray (#10941)
+- Fix type causing high cpu usage on ARM (#10417)
+- Tons of translation updates (thanks to all translators!)
+
+1.0.1
+
+- Add "Run Task Manager as root" item in "Execute" menu
+- Add a menu position function
+- Fix shell substitution for Korn Shell (ksh)
+- Set monitor's background box use the prelight state
+- Remove quit tool button
+- OpemBSD removed KERN_PROC2/KINFO_PROC2 some months ago.
+- Translation updates: Arabic, Belarusian, Bulgarian, Catalan
+  (Valencian), Czech, Danish, German, Greek, English (Australia),
+  English (United Kingdom), Spanish (Castilian), Basque, Finnish,
+  French, Galician, Hebrew, Croatian, Hungarian, Indonesian, Icelandic,
+  Italian, Japanese, Kazakh, Korean, Lithuanian, Dutch (Flemish),
+  Occitan (post 1500), Polish, Portuguese, Portuguese (Brazilian),
+  Russian, Slovak, Slovenian, Serbian, Swedish, Telugu, Turkish,
+  Uyghur, Ukrainian, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan).
+
+1.0.0
+
+- Replaced progress bars against monitors
+- Display window icons/names with libwnck (optional)
+- Display the tree view context menu on Menu key press
+- On tree view column click sort first by descending order
+- Context menu on the status icon to quit the application
+- Hide window on window close when the status icon is visible
+- Several fixes
+
+0.5.92 ~ 1.0.0 beta3
+
+- New settings “More precision,” “Full command line,” “Show status icon” and
+  “Refresh rate”
+- Swap usage is hidden from status bar when there is no swap present
+- Show a warning banner inside the window when running as root
+- Make default search function of tree view case insensitive and match key
+  within names (e.g. settings matches xfsettingsd and xfce4-settings-helper)
+- Highlight started/terminated tasks and tasks with changed state in color
+- Tree view columns are reorderable
+
+0.5.91 ~ 1.0.0 beta2
+
+- (Re)Add support for OpenSolaris, FreeBSD and OpenBSD
+
+0.5.90 ~ 1.0.0 beta1
+
+- Completely rewritten with GObjects and introduce a new interface
+
+0.4.1
+
+- Bug fix release and first non-Linux support (OpenBSD from Landry Breuil)
+
+0.4.0
+
+[ Mike Massonnet <mmassonnet@xfce.org> ]
+- 64bit archs fix (#4059)
+- Clean up and bug fixes
+- Update strings
+
+[ Johannes Zellner <webmaster@nebulon.de> ]
+- Priority setting

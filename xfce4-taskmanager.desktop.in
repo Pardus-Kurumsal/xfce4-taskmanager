@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Task Manager
+_Comment=Easy to use task manager
+_GenericName=Task Manager
+Exec=xfce4-taskmanager
+Icon=utilities-system-monitor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;
