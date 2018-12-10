@@ -1,3 +1,10 @@
+xfce4-taskmanager (1.1.0-1pardus1) unstable; urgency=medium
+
+  * Add patches
+  * Pardus CI implementation
+
+ -- Hikmet Baş <hikmet.bas@pardus.org.tr>  Mon, 10 Dec 2018 16:10:21 +0300
+
 xfce4-taskmanager (1.1.0-1) unstable; urgency=medium
 
   [ Mateusz Łukasik ]
