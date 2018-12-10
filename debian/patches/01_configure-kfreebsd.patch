@@ -1,24 +1,17 @@
-Author: Pino Toscano <toscano.pino@tiscali.it>
-Description: Enable building on kFreeBSD
- Make use of the "freebsd" OS implementation, as the kernel is the same.
- .
- Also, provide build fixes for task-manager-freebsd.c:
- - include <sys/vmmeter.h>, needed with FreeBSD >= 9.0 (see also the upstream
-   bug #8081)
- - NZERO is not provided by kfreebsd-kernel-headers, as already provided by
-   limits.h but only when _XOPEN_SOURCE is requested (and it is not in this
-   case); make use of sysconf to query that value instead
-Last-Update: 2015-03-16
-Forwarded: no
+From: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Date: Mon, 10 Dec 2018 13:33:27 +0300
+Subject: _configure-kfreebsd
 
 ---
- configure.ac               |    2 +-
- src/task-manager-freebsd.c |    6 ++++--
- 2 files changed, 5 insertions(+), 3 deletions(-)
+ configure.ac               | 2 +-
+ src/task-manager-freebsd.c | 7 +++----
+ 2 files changed, 4 insertions(+), 5 deletions(-)
 
+diff --git a/configure.ac b/configure.ac
+index e6e25d3..394c16e 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -94,7 +94,7 @@ if test x"$ac_skel" = x"yes"; then
+@@ -103,7 +103,7 @@ if test x"$ac_skel" = x"yes"; then
  	ac_os_implementation="skel"
  else
  	case "$target_os" in
@@ -27,6 +20,8 @@ Forwarded: no
  		ac_os_implementation="freebsd"
  		AC_CHECK_LIB([kvm], [kvm_openfiles])
  		AC_CHECK_HEADERS([fcntl.h kvm.h paths.h pwd.h sys/param.h sys/proc.h \
+diff --git a/src/task-manager-freebsd.c b/src/task-manager-freebsd.c
+index 79a8aea..f3099eb 100644
 --- a/src/task-manager-freebsd.c
 +++ b/src/task-manager-freebsd.c
 @@ -18,9 +18,7 @@
@@ -38,8 +33,8 @@ Forwarded: no
 -#endif
  
  #include <glib.h>
-
-@@ -104,6 +105,7 @@ get_task_details (kvm_t *kd, struct kinf
+ 
+@@ -107,6 +105,7 @@ get_task_details (kvm_t *kd, struct kinfo_proc *kp, Task *task)
  	struct passwd *pw;
  	char **argv;
  	int i;
@@ -47,7 +42,7 @@ Forwarded: no
  
  	task->pid = kp->ki_pid;
  	task->ppid = kp->ki_ppid;
-@@ -168,9 +170,9 @@ get_task_details (kvm_t *kd, struct kinf
+@@ -171,9 +170,9 @@ get_task_details (kvm_t *kd, struct kinfo_proc *kp, Task *task)
  	i++;
  	if (!(kp->ki_sflag & PS_INMEM))
  		task->state[i++] = 'W';
